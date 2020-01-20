@@ -1,0 +1,35 @@
+.filmContainer {
+    padding: 0 15px;
+  
+    &:hover {
+      .filmButton {
+        visibility: visible;
+      }
+    }
+  
+    .filmImg {
+      margin: 2px 5px;
+      img {
+        height: 250px;
+      }
+    }
+  
+    .filmButton {
+      visibility: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      cursor: pointer;
+      border-radius: 5px;
+  
+      &:hover {
+        background-color: black;
+      }
+  
+      .buttonContent {
+        padding: 10px;
+        font-weight: bold;
+        color: white;
+      }
+    }
+  }
