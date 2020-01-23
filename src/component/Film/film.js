@@ -1,8 +1,12 @@
 import React from 'react';
-import FilmStyle from './index.module.scss';
+import FilmStyle from './film.module.scss';
 import PropTypes from 'prop-types';
 
-const MyLists = ({
+/**
+ * Set up the film stateless component and recieve the specfic data from filmLists.js Component
+ */
+
+const film = ({
                      title,
                      id,
                      img,
@@ -24,7 +28,7 @@ const MyLists = ({
     );
 };
 
-MyLists.propTypes = {
+film.propTypes = {
     id: PropTypes.number,
     title: PropTypes.string,
     img: PropTypes.string,
@@ -33,7 +37,7 @@ MyLists.propTypes = {
     buttonType: PropTypes.string,
 };
 
-MyLists.defaultProps = {
+film.defaultProps = {
     styles: FilmStyle,
     id: 0,
     title: '',
@@ -42,4 +46,4 @@ MyLists.defaultProps = {
     clickHandler: () => {},
 };
 
-export default MyLists;
+export default film;

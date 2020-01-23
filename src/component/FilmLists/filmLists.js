@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Film from '../Film';
-import ListsStyle from './index.module.scss';
+import Film from '../Film/film';
+import ListsStyle from './filmLists.module.scss';
+
+/**
+ *   Set up the FilmLists stateless component. Recive the specific data from Netfilx.js component 
+ */
 
 const FilmLists = ({
     styles,

@@ -4,6 +4,10 @@ import {
     REMOVE_FILM
 } from '../actions/actionTypes';
 
+/**
+ * Set up the filmReducer according to action type to manipulate the state data for updating the state in redux store
+ */
+
 const initialState = {
     myList: [],
     recommendations: [],

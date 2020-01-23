@@ -1,6 +1,11 @@
 import { FETCH_FILM, ADD_FILM, REMOVE_FILM } from './actionTypes';
 import axios from 'axios';
 
+/**
+ *  Invoke axios for send the Http request to backend server for get the data. Use the pure function to
+ *  define different kinds of action with action type and payload.
+ */
+
 export const addFilm = (film) => ({
     type: ADD_FILM,
     film,

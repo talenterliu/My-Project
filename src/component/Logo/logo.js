@@ -1,6 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LogoStyle from './index.module.scss';
+import LogoStyle from './logo.module.scss';
+
+
+/**
+ *  Set up the logo stateless component wiht SVG 
+ */
 
 const Logo = ({styles}) => (
     <div className={styles.logoContainer}>

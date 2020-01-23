@@ -3,9 +3,15 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
 import * as filmActions from '../../actions/film.action';
-import FilmLists from '../../component/FilmLists';
-import Logo from '../../component/Logo';
-import NetFlixStyle from './index.module.scss';
+import FilmLists from '../../component/FilmLists/filmLists';
+import Logo from '../../component/Logo/logo';
+import NetFlixStyle from './netflix.module.scss';
+
+/**
+ *  Set up the Netflix stateful component and bound it with Redux store. Use componentDidMount lifecycle
+    hook method to fetch data from serve side. And Use the "connect" HOC to bound this component with redux
+    store for get data. Create the "remove" and "add" handler for dispatch the relevant actions.
+ */
 
 class NetFlix extends Component {
 

@@ -16,14 +16,14 @@
   
     .filmButton {
       visibility: hidden;
-      border: 1px solid rgba(0, 0, 0, 0.5);
-      background-color: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background-color: rgba(255, 255, 255, 0.4);
       text-align: center;
       cursor: pointer;
       border-radius: 5px;
   
       &:hover {
-        background-color: black;
+        background-color: palevioletred;
       }
   
       .buttonContent {
